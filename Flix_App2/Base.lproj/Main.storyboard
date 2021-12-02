@@ -155,7 +155,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieGridCell" translatesAutoresizingMaskIntoConstraints="NO" id="Dwf-IH-UW4" customClass="MovieGridCell" customModule="Flix_App2" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" reuseIdentifier="MovieGridCell" translatesAutoresizingMaskIntoConstraints="NO" id="Dwf-IH-UW4" customClass="MovieGridCell" customModule="Flix_App2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="196" height="204"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SJH-rs-g3m">
@@ -171,6 +171,7 @@
                                         <size key="customSize" width="196" height="204"/>
                                         <connections>
                                             <outlet property="posterView" destination="Msg-EG-oGa" id="nUr-W7-mjc"/>
+                                            <segue destination="pZ9-kR-WJ9" kind="show" id="MoJ-tL-zMz"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -226,6 +227,9 @@
             <point key="canvasLocation" x="18.840579710144929" y="841.74107142857144"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MoJ-tL-zMz"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
